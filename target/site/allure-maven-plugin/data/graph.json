@@ -1,0 +1,14 @@
+{
+  "testCases" : [ {
+    "uid" : "6ae88bbe29d9c2e0",
+    "name" : "checkScoringWithPostRequestWithValidAllData",
+    "title" : "Check scoring with post request with valid all data",
+    "time" : {
+      "start" : 1515779083379,
+      "stop" : 1515779086595,
+      "duration" : 3216
+    },
+    "severity" : "NORMAL",
+    "status" : "FAILED"
+  } ]
+}

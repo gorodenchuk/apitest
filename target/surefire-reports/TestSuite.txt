@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.96 s <<< FAILURE! - in TestSuite
+checkScoringWithPostRequestWithValidAllData(organizationstest.ScoringStatusTestSuit)  Time elapsed: 3.231 s  <<< FAILURE!
+java.lang.AssertionError: expected [seems that we doesn`t recieved token, or it is not correct] but found [false]
+	at organizationstest.ScoringStatusTestSuit.checkScoringWithPostRequestWithValidAllData(ScoringStatusTestSuit.java:44)
+
