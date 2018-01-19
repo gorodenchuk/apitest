@@ -20,13 +20,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Weights {
 
     @JsonProperty("businessPartnership")
-    private Double businessPartnership;
+    private String businessPartnership;
     @JsonProperty("competitor")
-    private Double competitor;
+    private String competitor;
     @JsonProperty("ownership")
-    private Double ownership;
+    private String ownership;
     @JsonProperty("supplier")
-    private Double supplier;
+    private String supplier;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -44,7 +44,7 @@ public class Weights {
      * @param competitor
      * @param supplier
      */
-    public Weights(Double businessPartnership, Double competitor, Double ownership, Double supplier) {
+    public Weights(String businessPartnership, String competitor, String ownership, String supplier) {
         super();
         this.businessPartnership = businessPartnership;
         this.competitor = competitor;
@@ -53,61 +53,61 @@ public class Weights {
     }
 
     @JsonProperty("businessPartnership")
-    public Double getBusinessPartnership() {
+    public String getBusinessPartnership() {
         return businessPartnership;
     }
 
     @JsonProperty("businessPartnership")
-    public void setBusinessPartnership(Double businessPartnership) {
+    public void setBusinessPartnership(String businessPartnership) {
         this.businessPartnership = businessPartnership;
     }
 
-    public Weights withBusinessPartnership(Double businessPartnership) {
+    public Weights withBusinessPartnership(String businessPartnership) {
         this.businessPartnership = businessPartnership;
         return this;
     }
 
     @JsonProperty("competitor")
-    public Double getCompetitor() {
+    public String getCompetitor() {
         return competitor;
     }
 
     @JsonProperty("competitor")
-    public void setCompetitor(Double competitor) {
+    public void setCompetitor(String competitor) {
         this.competitor = competitor;
     }
 
-    public Weights withCompetitor(Double competitor) {
+    public Weights withCompetitor(String competitor) {
         this.competitor = competitor;
         return this;
     }
 
     @JsonProperty("ownership")
-    public Double getOwnership() {
+    public String getOwnership() {
         return ownership;
     }
 
     @JsonProperty("ownership")
-    public void setOwnership(Double ownership) {
+    public void setOwnership(String ownership) {
         this.ownership = ownership;
     }
 
-    public Weights withOwnership(Double ownership) {
+    public Weights withOwnership(String ownership) {
         this.ownership = ownership;
         return this;
     }
 
     @JsonProperty("supplier")
-    public Double getSupplier() {
+    public String getSupplier() {
         return supplier;
     }
 
     @JsonProperty("supplier")
-    public void setSupplier(Double supplier) {
+    public void setSupplier(String supplier) {
         this.supplier = supplier;
     }
 
-    public Weights withSupplier(Double supplier) {
+    public Weights withSupplier(String supplier) {
         this.supplier = supplier;
         return this;
     }

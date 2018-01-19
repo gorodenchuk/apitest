@@ -1,2 +1,4 @@
-organizationstest\ScoringStatusTestSuit.class
+scoringcontrollertest\ScoreOrganizationsTestSuit.class
+scoringcontrollertest\ScoringResultsTestSuit.class
+scoringcontrollertest\ScoringStatusTestSuit.class
 testbase\TestBase.class

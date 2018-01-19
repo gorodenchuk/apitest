@@ -1,14 +1,52 @@
-2018-01-12 19:44:42 INFO  Log:16 - ***************** Testing started! *****************
-2018-01-12 19:44:43 INFO  Log:16 - ----------------- Test: checkScoringWithPostRequestWithValidAllData started! -----------------
-2018-01-12 19:44:43 INFO  ScoringStatusTestSuit:35 - {
-  "organizationUris" : [ "http://feed.thomsonreuters.com/1-4297034757" ],
+2018-01-19 19:21:25 INFO  Log:16 - ***************** Testing started! *****************
+2018-01-19 19:21:25 INFO  Log:16 - ----------------- Test: checkScoringResultWithValidAllWeights started! -----------------
+2018-01-19 19:21:25 INFO  ScoringResultsTestSuit:40 - {
+  "organizationUris" : [ "http://feed.thomsonreuters.com/1-4295903076", "http://feed.thomsonreuters.com/1-4295904307", "http://feed.thomsonreuters.com/1-4295903678", "http://feed.thomsonreuters.com/1-4295903744", "http://feed.thomsonreuters.com/1-4295905952", "http://feed.thomsonreuters.com/1-4295903091", "http://feed.thomsonreuters.com/1-5050895314", "http://feed.thomsonreuters.com/1-4295912121", "http://feed.thomsonreuters.com/1-4295903128", "http://feed.thomsonreuters.com/1-4295911963" ],
   "weights" : {
-    "businessPartnership" : 0.9,
-    "competitor" : 0.9,
-    "ownership" : 0.9,
-    "supplier" : 0.9
+    "businessPartnership" : "0.9",
+    "competitor" : "0.9",
+    "ownership" : "0.9",
+    "supplier" : "0.9"
   }
 }
-2018-01-12 19:44:46 INFO  Log:16 - ----------------- Ended successfully -----------------
-2018-01-12 19:44:46 INFO  Log:16 - ================= Test: checkScoringWithPostRequestWithValidAllData FAILED! =================
-2018-01-12 19:44:46 INFO  Log:16 - ***************** Testing finished! *****************
+2018-01-19 19:21:28 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:29 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:29 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:30 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:30 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:30 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:31 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:31 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:32 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:32 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:32 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:33 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:33 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:34 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:34 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:35 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:35 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:35 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:36 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:36 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:36 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:37 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:37 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:38 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:38 INFO  ScoringStatusLogic:17 - 0.5387278         progress status
+2018-01-19 19:21:38 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:39 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:39 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:40 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:40 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:40 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:41 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:41 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:42 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:42 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:42 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:43 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:43 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:44 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:44 INFO  ScoringStatusLogic:17 - 0.99         progress status
+2018-01-19 19:21:44 INFO  ScoringStatusLogic:17 - 0.99         progress status

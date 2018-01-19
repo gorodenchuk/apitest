@@ -1,0 +1,13 @@
+OrgId,WeightName,WeightValue,TestCase#
+4295904307,bussinessPs,1.0,2.20
+4295904307,bussinessPs,0,2.21
+4295904307,bussinessPs,1,2.22
+4295904307,competitor,1.0,2.23
+4295904307,competitor,0,2.24
+4295904307,competitor,1,2.25
+4295904307,ownerS,1.0,2.26
+4295904307,ownerS,0,2.27
+4295904307,ownerS,1,2.28
+4295904307,supplier,1.0,2.29
+4295904307,supplier,0,2.30
+4295904307,supplier,1,2.31

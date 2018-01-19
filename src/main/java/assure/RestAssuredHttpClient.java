@@ -3,10 +3,13 @@ package assure;
 //import apicalls.ApiCall;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.builder.RequestSpecBuilder;
+import com.jayway.restassured.config.HttpClientConfig;
+import com.jayway.restassured.config.RestAssuredConfig;
 import com.jayway.restassured.filter.log.LogDetail;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
+import org.apache.http.params.CoreConnectionPNames;
 import org.apache.log4j.Logger;
 import utils.Log;
 
@@ -82,6 +85,7 @@ public class RestAssuredHttpClient {
 		return this;
 	}
 
+
 	@SuppressWarnings("unused")
 	private RestAssuredHttpClient baseAuthOnForm(String userName, String password, String authUrl) {
 		try {
@@ -139,10 +143,16 @@ public class RestAssuredHttpClient {
 		return response;
 	}
 
-	public Response callHttpGet(String basePath, String endPointUrl, Map<String, String> params, Map<String, ?> headers) {
+	RestAssuredConfig config = RestAssured.config()
+			.httpClient(HttpClientConfig.httpClientConfig()
+					.setParam(CoreConnectionPNames.CONNECTION_TIMEOUT, 1000)
+					.setParam(CoreConnectionPNames.SO_TIMEOUT, 1000));
+
+
+	public Response callHttpGet(String basePath, String endPointUrl, Map<String, ?> params, Map<String, ?> headers) {
 		Response response = null;
 		try {
-			response = given().headers(headers).parameters(params).when().get(new URL(getBaseUrl() + ":" + getBasePort() + basePath + endPointUrl)).prettyPeek();
+			response = given().config(config).headers(headers).parameters(params).when().get(new URL(getBaseUrl() + ":" + getBasePort() + basePath + endPointUrl)).prettyPeek();
 
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block

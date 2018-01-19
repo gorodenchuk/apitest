@@ -2,7 +2,9 @@
 <suite name="Test runner" parallel="classes" thread-count="1">
     <test name="Package with subpackages">
         <classes>
-            <class name="organizationstest.ScoringStatusTestSuit"/>
+            <class name="scoringcontrollertest.ScoringResultsTestSuit"/>
+            <!--<class name="scoringcontrollertest.ScoringStatusTestSuit"/>-->
+            <!--<class name="scoringcontrollertest.ScoreOrganizationsTestSuit"/>-->
         </classes>
     </test>
 </suite>
