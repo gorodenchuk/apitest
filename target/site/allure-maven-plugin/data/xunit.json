@@ -1,0 +1,38 @@
+{
+  "time" : {
+    "start" : 1516484392150,
+    "stop" : 1516484393616,
+    "duration" : 1466
+  },
+  "testSuites" : [ {
+    "uid" : "b3057f123d4e961d",
+    "name" : "Test runner : Package with subpackages",
+    "title" : "Test runner : Package with subpackages",
+    "time" : {
+      "start" : 1516484392150,
+      "stop" : 1516484393616,
+      "duration" : 1466
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "a2ddb096aa92c2d2",
+      "name" : "checkScoringResultWithValidAllWeights[[Ljava.lang.String;@731a5a39,0.9,0.9,0.9,0.9]",
+      "title" : "Check scoring result with valid all weights [ [Ljava.lang.String;@731a5a39,0.9,0.9,0.9,0.9]",
+      "time" : {
+        "start" : 1516484392150,
+        "stop" : 1516484393616,
+        "duration" : 1466
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}

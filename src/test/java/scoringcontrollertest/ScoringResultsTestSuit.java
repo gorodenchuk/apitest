@@ -12,9 +12,6 @@ import testconfig.headers.GetHeader;
 import testconfig.models.ScoreOrgDataModel;
 
 import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 public class ScoringResultsTestSuit extends TestBase {
 
@@ -30,14 +27,10 @@ public class ScoringResultsTestSuit extends TestBase {
 
     @Test(dataProvider = "OrganizationWithAllValidData", dataProviderClass = ScoreOrganizationsData.class,
             description = "GET /scoring/ScoringResults request with 1 valid organization " +
-            "and all types of org included. Response should be 200, with valid token, launched = true and with progress status")
+                    "and all types of org included. Response should be 200, with valid token, launched = true and with progress status")
     // TS.4.1
     public void checkScoringResultWithValidAllWeights(String[] org, String bussinessPs, String competitor,
                                                       String ownerS, String supplier) throws Exception {
-        long start_time = System.currentTimeMillis();
-        long wait_time = 1;
-        long end_time = start_time + wait_time;
-
 
         jsonString = scoreOrgDataModel.modelWithListOfOrgs(Arrays.asList(org), bussinessPs, competitor, ownerS, supplier);
         Log.info(jsonString);
@@ -45,15 +38,17 @@ public class ScoringResultsTestSuit extends TestBase {
         token = response.getBody().print();
         params.put("scoreToken", token);
 
-        do {
-                response = httpClient.callHttpGet("/scoring", "/scoringStatus", params, getHeader.setHeaders());
-                jsonDataSourceString = response.getBody().asString();
-                jsonpathCreatorProgressToken = ScoringStatusLogic.checkProgressStatus(jsonDataSourceString);
-            } while ((System.currentTimeMillis()-System.currentTimeMillis())<1000 || !jsonpathCreatorProgressToken.equals(1.0));
+        long start_time = System.currentTimeMillis();
 
-          if (!jsonpathCreatorProgressToken.equals(1.0)) {
-              Assert.assertTrue(false);
-          }
+        while (!jsonpathCreatorProgressToken.equals(1.0) && (System.currentTimeMillis() - start_time) < 1000) {
+            response = httpClient.callHttpGet("/scoring", "/scoringStatus", params, getHeader.setHeaders());
+            jsonDataSourceString = response.getBody().asString();
+            jsonpathCreatorProgressToken = ScoringStatusLogic.checkProgressStatus(jsonDataSourceString);
+        }
+
+        if (!jsonpathCreatorProgressToken.equals(1.0)) {
+            Assert.assertTrue(false);
+        }
 
         responseType = response.getBody().print().getClass().getTypeName();
         params.put("pageNumber", 1);

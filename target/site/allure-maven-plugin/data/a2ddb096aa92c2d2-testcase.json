@@ -1,0 +1,62 @@
+{
+  "uid" : "a2ddb096aa92c2d2",
+  "name" : "checkScoringResultWithValidAllWeights[[Ljava.lang.String;@731a5a39,0.9,0.9,0.9,0.9]",
+  "title" : "Check scoring result with valid all weights [ [Ljava.lang.String;@731a5a39,0.9,0.9,0.9,0.9]",
+  "time" : {
+    "start" : 1516484392150,
+    "stop" : 1516484393616,
+    "duration" : 1466
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "GET /scoring/ScoringResults request with 1 valid organization and all types of org included. Response should be 200, with valid token, launched = true and with progress status",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "b3057f123d4e961d",
+    "name" : "Test runner : Package with subpackages",
+    "title" : "Test runner : Package with subpackages"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "request",
+    "source" : "5d959cd2-5889-467d-9cdd-648773de6000-attachment.bin",
+    "type" : "application/octet-stream",
+    "size" : 0,
+    "uid" : "dfefe5b6000a80aa"
+  }, {
+    "title" : "response",
+    "source" : "7c9d721e-4f03-4950-9881-64d0315b1602-attachment.bin",
+    "type" : "application/octet-stream",
+    "size" : 0,
+    "uid" : "d49e8f8225668fd7"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-14LIAQ3"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Test runner : Package with subpackages"
+  }, {
+    "name" : "thread",
+    "value" : "1296@DESKTOP-14LIAQ3.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Test runner : Package with subpackages"
+  } ],
+  "parameters" : [ ]
+}

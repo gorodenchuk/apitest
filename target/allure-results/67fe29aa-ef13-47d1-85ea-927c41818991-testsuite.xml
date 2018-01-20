@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516484391775" stop="1516484393680" version="1.4.23" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Test runner : Package with subpackages</name>
+    <title>Test runner : Package with subpackages</title>
+    <test-cases>
+        <test-case start="1516484392150" stop="1516484393616" status="passed">
+            <name>checkScoringResultWithValidAllWeights[[Ljava.lang.String;@731a5a39,0.9,0.9,0.9,0.9]</name>
+            <description>GET /scoring/ScoringResults request with 1 valid organization and all types of org included. Response should be 200, with valid token, launched = true and with progress status</description>
+            <steps/>
+            <attachments>
+                <attachment title="request" source="5d959cd2-5889-467d-9cdd-648773de6000-attachment.bin" type="application/octet-stream"/>
+                <attachment title="response" source="7c9d721e-4f03-4950-9881-64d0315b1602-attachment.bin" type="application/octet-stream"/>
+            </attachments>
+            <labels>
+                <label name="host" value="DESKTOP-14LIAQ3"/>
+                <label name="thread" value="1296@DESKTOP-14LIAQ3.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

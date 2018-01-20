@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test runner" duration-ms="16953" started-at="2018-01-20T21:39:36Z" finished-at="2018-01-20T21:39:53Z">
+    <groups>
+    </groups>
+    <test name="Package with subpackages" duration-ms="16953" started-at="2018-01-20T21:39:36Z" finished-at="2018-01-20T21:39:53Z">
+      <class name="scoringcontrollertest.ScoringResultsTestSuit">
+        <test-method status="PASS" signature="setupHttpClient()[pri:0, instance:scoringcontrollertest.ScoringResultsTestSuit@15f11bfb]" name="setupHttpClient" is-config="true" duration-ms="227" started-at="2018-01-20T23:39:51Z" description="Configure Base Url before test" finished-at="2018-01-20T23:39:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupHttpClient -->
+        <test-method status="PASS" signature="checkScoringResultWithValidAllWeights([Ljava.lang.String;, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scoringcontrollertest.ScoringResultsTestSuit@15f11bfb]" name="checkScoringResultWithValidAllWeights" duration-ms="1038" started-at="2018-01-20T23:39:52Z" description="GET /scoring/ScoringResults request with 1 valid organization and all types of org included. Response should be 200, with valid token, launched = true and with progress status" data-provider="OrganizationWithAllValidData" finished-at="2018-01-20T23:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@731a5a39]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.9]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0.9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0.9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkScoringResultWithValidAllWeights -->
+        <test-method status="PASS" signature="tearDownHttpClientTests()[pri:0, instance:scoringcontrollertest.ScoringResultsTestSuit@15f11bfb]" name="tearDownHttpClientTests" is-config="true" duration-ms="1" started-at="2018-01-20T23:39:53Z" description="Reset Client Props after test" finished-at="2018-01-20T23:39:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHttpClientTests -->
+      </class> <!-- scoringcontrollertest.ScoringResultsTestSuit -->
+    </test> <!-- Package with subpackages -->
+  </suite> <!-- Test runner -->
+</testng-results>
